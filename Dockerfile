@@ -32,8 +32,6 @@ COPY --from=builder /app/jiotv_go .
 # Set environment variables
 ENV JIOTV_PATH_PREFIX="/app/.jiotv_go"
 
-# Volume for credentials
-VOLUME /app/.jiotv_go
 
 # Expose port 5001 to the outside world
 EXPOSE 5001
